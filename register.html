@@ -1,0 +1,138 @@
+<html>
+<head>
+        <script src="main.js"></script>
+    <style>
+    
+body{
+
+
+           background:rosybrown;
+            color:rebeccapurple;
+}
+h1{
+    background:rosybrown;
+            color:rebeccapurple;
+}
+
+    </style>
+    
+</head>
+
+<body>
+    <h1><center> REGISTRATION FORM </center></h1>
+<form onsubmit="return validate();" >
+
+    <table align="center">
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" id="fname" name="fname"></td>
+            </tr>
+
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" id="lname" name="lname"></td>
+            </tr>
+            
+            <tr>
+                <td>Gender</td>
+                <td>
+                        <input type="radio" class="ge" name="gender" value="M">Male
+                        <input type="radio" class="ge" name="gender" value="F">Female
+                </td>
+            </tr>
+            
+        
+            <tr>
+                <td>Email</td>
+                <td><input type="email" id="femail" name="email"></td>
+            </tr>
+
+
+            <tr>
+                    <td>Education Qualification</td>
+                    <td><input type="text" id="edu_qu" name="edu_qualification"></td>
+            </tr>
+
+    
+        
+            
+
+            <tr>
+                    <td>Date Of Birth</td>
+                    <td><input type="date" id="bdate" name="dob"></td>
+            </tr>
+
+
+
+            
+            
+
+            <tr>
+                    <td>City</td>
+                    <td>
+                            <select id="cityselect" name="city" placeholder="Select">
+                                    <option value="">Select City</option>
+                                    <option value="Mumbai">Mumbai</option>
+                                    <option value="Hydrabad">Hydrabad</option>
+                                    <option value="Banglore">Banglore</option>
+                            </select>
+                    </td>
+            </tr>
+
+
+            
+
+            
+            
+            <tr>
+                    <td>Hobbies</td>
+                    <td>
+
+                            <input type="checkbox" class="hobbies" name="hobby" value="a">Read<br>
+                            <input type="checkbox" class="hobbies" name="hobby" value="b">Listen Music<br>
+                            <input type="checkbox" class="hobbies" name="hobby" value="c">Dance<br>
+                            <input type="checkbox" class="hobbies" name="hobby" value="d">Sleep whenever and wherever possible
+
+                    </td>
+            </tr>
+            
+            
+            
+
+            
+            <tr>
+                    <td>Confidence Level</td>
+                    <td><input type="range" id="frange" name="range" min=0 max=10 value="0">range</td>
+            </tr>
+
+        
+
+            <tr>
+                    <td>Age</td>
+                    <td><input type="Number" id="fage" name="Number" min=1 max=90></td>
+            </tr>
+
+
+    </table>
+
+<div style="text-align:center">
+    <br><br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Clear">
+    <input type="button" value="Button">
+    <button>Button</button>
+    
+    <br><br>
+    <span id="errorMsg" style="color:red"></span>
+    <span id="successMsg" style="color:green"></span>
+
+</div>
+
+
+</form>
+    
+
+<footer>&copy 2019</footer>
+
+</body>
+</html>
